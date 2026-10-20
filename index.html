@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katalog projektov (Showcase) – Skupina 2</title>
+  <style>
+    :root {
+      --bg: #f5f7fb; --ink: #1b1f3b; --muted: #4a5078;
+      --accent: #3b5bdb; --sun: #ffd43b; --card: #ffffff; --line: #d9e0f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0f1430; --ink: #eef1ff; --muted: #aab3e0; --card: #171d45; --line: #2b3470; --accent: #8da2ff; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", system-ui, Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+    header { padding: 64px 24px 48px; max-width: 960px; margin: 0 auto; }
+    header p.meta { color: var(--muted); margin: 0 0 12px; }
+    h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 16px; }
+    h1 span { background: linear-gradient(transparent 62%, var(--sun) 62%); }
+    h2 { font-size: 1.6rem; margin: 0 0 12px; }
+    h3 { margin: 20px 0 6px; font-size: 1.1rem; }
+    main { max-width: 960px; margin: 0 auto; padding: 0 24px 64px; }
+    section { margin-bottom: 40px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; }
+    .persona { display: grid; grid-template-columns: 300px 1fr; gap: 32px; align-items: start; }
+    .persona img { width: 100%; height: auto; border-radius: 16px; display: block; }
+    blockquote { margin: 0 0 16px; padding-left: 16px; border-left: 4px solid var(--sun); color: var(--muted); font-style: italic; }
+    ul { padding-left: 20px; margin: 6px 0; }
+    li { margin-bottom: 4px; }
+    dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0 0 8px; }
+    dt { font-weight: 600; } dd { margin: 0; }
+    footer { text-align: center; color: var(--muted); padding: 24px; border-top: 1px solid var(--line); }
+    @media (max-width: 720px) { .persona { grid-template-columns: 1fr; } .persona img { max-width: 320px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="meta">RPS · Skupina 2 · 2.d · SERŠ Maribor · šolsko leto 2026/27</p>
+    <h1><span>Katalog projektov</span> (Showcase)</h1>
+    <p>Spletno mesto, kjer dijaki objavijo svoje šolske projekte, jih pokažejo drugim in dobijo povratne informacije.</p>
+  </header>
+
+  <main>
+    <section class="card" id="opis">
+      <h2>O projektu</h2>
+      <p>Dijaki pri praktičnem pouku ustvarijo veliko dobrih izdelkov, a ti po oddaji in oceni obležijo v mapi, na USB-ključku ali v spletni učilnici. Nihče jih ne vidi, dijaki pa si ne zgradijo portfolia, ki bi ga lahko pokazali delodajalcu ali fakulteti.</p>
+      <p>Aplikacija <strong>Katalog projektov</strong> rešuje ta problem. Omogoča:</p>
+      <ul>
+        <li>javni profil projekta z opisom, slikami in povezavo do kode na GitHubu,</li>
+        <li>komentarje in ocenjevanje projektov s strani sošolcev in profesorjev,</li>
+        <li>pregledno brskanje in filtriranje projektov po kategorijah.</li>
+      </ul>
+    </section>
+
+    <section id="persona">
+      <h2>Persona: Marko Novak</h2>
+      <div class="card persona">
+        <img src="persona.svg" alt="Ilustracija persone Marko Novak z očali in prenosnikom">
+        <div>
+          <blockquote>„Škoda je, da moji projekti po ocenjevanju obležijo v mapi na računalniku ali na USB-ju, ko pa bi jih lahko ponosno pokazal sošolcem ali bodočemu delodajalcu.“</blockquote>
+          <dl>
+            <dt>Ime:</dt><dd>Marko Novak</dd>
+            <dt>Starost:</dt><dd>18 let</dd>
+            <dt>Vloga:</dt><dd>Dijak 3. letnika, Tehnik računalništva, SERŠ Maribor</dd>
+            <dt>Znanje:</dt><dd>HTML, CSS, JavaScript, osnove PHP in MySQL, GitHub</dd>
+            <dt>Orodja:</dt><dd>VS Code, GitHub, Discord, Figma, Moodle</dd>
+          </dl>
+
+          <h3>Njegove potrebe</h3>
+          <ul>
+            <li>Zgraditi pregleden spletni portfolio za prihodnje prijave na delo ali fakulteto.</li>
+            <li>Prejeti konstruktivne komentarje in ocene sošolcev ter profesorjev.</li>
+            <li>Najti navdih v projektih sošolcev in starejših letnikov.</li>
+            <li>Poiskati sošolce s podobnimi interesi za skupinsko delo.</li>
+          </ul>
+
+          <h3>Njegove težave</h3>
+          <ul>
+            <li>Trud celotnega ocenjevalnega obdobja se po oceni izgubi.</li>
+            <li>Na šoli ni enotnega mesta, kjer bi videl, kaj ustvarjajo drugi.</li>
+            <li>Po oddaji dobi le oceno profesorja, ne pa odziva vrstnikov.</li>
+            <li>Deljenje povezav preko Discorda ali e-pošte je nepregledno.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="resitev">
+      <h2>Kako projekt pomaga Marku</h2>
+      <ul>
+        <li>Želi predstaviti projekt in kodo → aplikacija mu omogoča javni profil projekta.</li>
+        <li>Želi povratne informacije → aplikacija ima komentarje in ocenjevanje.</li>
+        <li>Želi lažje brskanje → aplikacija ponuja filtriranje po kategorijah.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Skupina 2: Anej Kohne, Hristijan Garevski, Niko Podlesnik · Mentor: Sergej Lah
+  </footer>
+</body>
+</html>
