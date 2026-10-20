@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6fc;
+    color: #17203b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #101426;
+    border-bottom: 1px solid #292d43;
+}
+
+.navigacija {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.logo span,
+.uvod h1 span,
+.vijolicno {
+    color: #9a72ff;
+}
+
+.povezave {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.povezave a {
+    color: #e0e3f1;
+    font-size: 14px;
+}
+
+.povezave a:hover {
+    color: #b69aff;
+}
+
+.uvod {
+    background: linear-gradient(120deg, #101426, #1c1d3c);
+    color: white;
+    padding: 75px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.uvod-vsebina {
+    max-width: 560px;
+}
+
+.oznaka {
+    color: #9168ff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.uvod h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.podnaslov {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.uvod-opis {
+    color: #c5cadd;
+    margin-bottom: 28px;
+}
+
+.gumb {
+    display: inline-block;
+    background-color: #8055ed;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.gumb:hover {
+    background-color: #6840d0;
+}
+
+.predogled {
+    background-color: #202442;
+    border: 1px solid #46416e;
+    border-radius: 18px;
+    padding: 28px;
+    width: 330px;
+    min-width: 260px;
+    text-align: center;
+    box-shadow: 0 15px 40px #080b1d55;
+}
+
+.predogled-vrh {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 25px;
+}
+
+.predogled-vrh span {
+    width: 9px;
+    height: 9px;
+    background-color: #8f72ec;
+    border-radius: 50%;
+}
+
+.predogled-ikona {
+    background-color: #30285b;
+    color: #bca6ff;
+    font-size: 38px;
+    font-weight: bold;
+    width: 90px;
+    margin: 0 auto 18px;
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.predogled h2 {
+    font-size: 23px;
+}
+
+.predogled p {
+    color: #b9bed6;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.projekt,
+.persona {
+    max-width: 1100px;
+    padding: 65px 20px;
+    margin: auto;
+}
+
+.projekt h2,
+.persona h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.opis-projekta {
+    max-width: 850px;
+    color: #555e78;
+    margin-bottom: 30px;
+}
+
+.lastnosti {
+    display: flex;
+    gap: 20px;
+}
+
+.lastnost {
+    background-color: white;
+    border: 1px solid #e4e6f2;
+    border-radius: 12px;
+    padding: 24px;
+    flex: 1;
+}
+
+.simbol {
+    color: #8055ed;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lastnost h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.lastnost p {
+    color: #626a82;
+    font-size: 14px;
+}
+
+.persona {
+    max-width: none;
+    background-color: #eceeff;
+    padding-left: max(20px, calc((100% - 1060px) / 2));
+    padding-right: max(20px, calc((100% - 1060px) / 2));
+}
+
+.persona-naslov > p:last-child {
+    color: #626a82;
+    margin-bottom: 25px;
+}
+
+.persona-kartica {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 25px #24264a0d;
+}
+
+.persona-kartica img {
+    width: 310px;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.persona-podatki h3 {
+    font-size: 27px;
+}
+
+.starost {
+    color: #8055ed;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.persona-podatki > p:not(.oznaka):not(.starost) {
+    color: #555e78;
+}
+
+.persona-podatki h4 {
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+.persona-podatki ul {
+    padding-left: 22px;
+    color: #555e78;
+}
+
+blockquote {
+    margin-top: 18px;
+    padding: 13px 16px;
+    border-left: 4px solid #8055ed;
+    background-color: #f5f3ff;
+    color: #34304d;
+    font-style: italic;
+}
+
+footer {
+    background-color: #101426;
+    color: #c5cadd;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 13px;
+}
+
+footer strong {
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .navigacija,
+    .uvod,
+    .persona-kartica {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .uvod h1 {
+        font-size: 38px;
+    }
+
+    .predogled {
+        width: 100%;
+    }
+
+    .lastnosti {
+        flex-direction: column;
+    }
+
+    .persona-kartica img {
+        width: 100%;
+        max-height: 360px;
+    }
+}
